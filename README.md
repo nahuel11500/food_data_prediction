@@ -63,7 +63,13 @@ Finally, we've let with those datas :
 
 I think that every columns might have an impact here on the numbers of steps. And here is the dataframe head :
 
-   minutes |   n_steps |   n_ingredients |   rating |   steps_words |   description_words |   ingredients_words |\n|----------:|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|\n|        40 |        10 |               9 |        4 |           128 |                  41 |                  18 |\n|        45 |        12 |              11 |        5 |           148 |                  42 |                  18 |\n|        40 |         6 |               9 |        5 |            92 |                  64 |                  21 |\n|       120 |         7 |               7 |        5 |           128 |                  34 |                  12 |\n|        90 |        17 |              13 |        5 |           257 |                  29 |                  29 |
+|   minutes |   n_steps |   n_ingredients |   rating |   steps_words |   description_words |   ingredients_words |
+|----------:|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|
+|        40 |        10 |               9 |        4 |           128 |                  41 |                  18 |
+|        45 |        12 |              11 |        5 |           148 |                  42 |                  18 |
+|        40 |         6 |               9 |        5 |            92 |                  64 |                  21 |
+|       120 |         7 |               7 |        5 |           128 |                  34 |                  12 |
+|        90 |        17 |              13 |        5 |           257 |                  29 |                  29 |
 ### Baseline Model
 
 So, the baseline model is a regression model that predicts the number of steps. It uses the features 'minutes' and 'n_ingredients'.
