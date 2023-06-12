@@ -146,7 +146,7 @@ And here is a plot of all the predict steps versus the actual numbers of steps :
 
 And here is a plot of the residual :
 
-<iframe src="assets/Residual_Plot_baseline_final_2.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Residual_Plot_baseline_final_model2.html" width=800 height=600 frameBorder=0></iframe>
 
 With the following precision :
 
@@ -175,7 +175,7 @@ And here is a plot of all the predict steps versus the actual numbers of steps :
 
 And here is a plot of the residual :
 
-<iframe src="assets/Residual_Plot_baseline_final_2t.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Residual_Plot_baseline_final_model2t.html" width=800 height=600 frameBorder=0></iframe>
 
 With the following precision :
 
