@@ -83,7 +83,13 @@ R2 Score: 0.18450057434464318
 
 Here is the dataframe head :
 
-|   minutes |   n_ingredients |   n_steps |   predicted_n_steps |\n|----------:|----------------:|----------:|--------------------:|\n|       495 |              15 |         9 |             14.2936 |\n|        25 |               9 |        10 |              9.9304 |\n|        35 |              12 |        11 |             12.1088 |\n|        75 |              21 |        22 |             18.6441 |\n|       170 |              15 |        38 |             14.289  |
+|   minutes |   n_ingredients |   n_steps |   predicted_n_steps |
+|----------:|----------------:|----------:|--------------------:|
+|        45 |              14 |         9 |            13.4936  |
+|        25 |              11 |         5 |            11.3409  |
+|        75 |               7 |        13 |             8.47166 |
+|        90 |              11 |         6 |            11.3418  |
+|        60 |              15 |        11 |            14.2113  |
 
 And here is a plot of all the predict steps versus the actual numbers of steps :
 
@@ -114,7 +120,13 @@ R2 Score: 0.7843539114289183
 
 Here is the dataframe head :
 
-|   minutes |   n_ingredients |   rating |   steps_words |   description_words |   ingredients_words |   n_steps |   predicted_n_steps |\n|----------|----------------|---------|--------------|--------------------|--------------------|----------|--------------------|\n|         1 |               2 |      4.5 |             5 |                   9 |                   3 |         1 |                   2 |\n|        70 |              15 |      1   |            94 |                  37 |                  21 |         8 |                  10 |\n|        10 |               3 |      5   |            28 |                  22 |                   3 |         3 |                   4 |\n|        25 |              11 |      2.5 |           114 |                  31 |                  22 |         8 |                  11 |\n|        40 |               7 |      5   |            63 |                  28 |                  11 |         4 |                   7 |
+|   minutes |   n_ingredients |   rating |   steps_words |   description_words |   ingredients_words |   n_steps |   predicted_n_steps |
+|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|----------:|--------------------:|
+|       250 |              10 |        2 |            45 |                  29 |                  15 |         5 |                   6 |
+|        60 |              11 |        5 |           214 |                  51 |                  19 |        17 |                  17 |
+|        50 |               8 |        5 |            54 |                  87 |                  17 |         6 |                   6 |
+|        55 |              11 |        5 |            87 |                  23 |                  17 |        10 |                   9 |
+|        30 |               8 |        4 |           166 |                  25 |                  18 |        13 |                  14 |
 
 And here is a plot of all the predict steps versus the actual numbers of steps :
 
@@ -122,7 +134,7 @@ And here is a plot of all the predict steps versus the actual numbers of steps :
 
 And here is a plot of the residual :
 
-<iframe src="assets/Residual_Plot_baseline_final_model_1.html.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Residual_Plot_baseline_final_model_1.html" width=800 height=600 frameBorder=0></iframe>
 
 With the following precision :
 
@@ -143,7 +155,13 @@ R2 Score: 0.783468767587091
 
 Here is the dataframe head :
 
-|   minutes |   n_ingredients |   rating |   steps_words |   description_words |   ingredients_words |   n_steps |   predicted_n_steps |\n|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|----------:|--------------------:|\n|        13 |               8 |  5       |            63 |                  41 |                  17 |         5 |                   7 |\n|       135 |              12 |  5       |           198 |                  49 |                  17 |        14 |                  17 |\n|        70 |               9 |  4       |           171 |                   3 |                  21 |        22 |                  16 |\n|        35 |              12 |  5       |           131 |                  84 |                  25 |        13 |                  12 |\n|        25 |               4 |  4.90909 |            32 |                  12 |                   7 |         4 |                   4 |
+|   minutes |   n_ingredients |   rating |   steps_words |   description_words |   ingredients_words |   n_steps |   predicted_n_steps |
+|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|----------:|--------------------:|
+|        15 |               7 |      5   |           247 |                  57 |                   9 |        21 |                  17 |
+|        45 |               8 |      5   |           147 |                  55 |                  17 |        13 |                  13 |
+|        75 |               8 |      4.5 |            77 |                   3 |                  20 |         9 |                   9 |
+|        25 |              11 |      4   |           159 |                   2 |                  12 |        13 |                  15 |
+|        20 |               8 |      5   |            62 |                  20 |                  13 |        12 |                   7 |
 
 And here is a plot of all the predict steps versus the actual numbers of steps :
 
@@ -151,7 +169,7 @@ And here is a plot of all the predict steps versus the actual numbers of steps :
 
 And here is a plot of the residual :
 
-<iframe src="assets/Residual_Plot_baseline_final_model2.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Residual_Plot_baseline_final_model_2.html" width=800 height=600 frameBorder=0></iframe>
 
 With the following precision :
 
@@ -172,7 +190,13 @@ R2 Score: 0.792055755312701
 
 Here is the dataframe head :
 
-|   minutes |   n_ingredients |   rating |   steps_words |   description_words |   ingredients_words |   total_words |   n_steps |   predicted_n_steps |\n|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|--------------:|----------:|--------------------:|\n|        20 |               6 |  4.66667 |            52 |                  40 |                   8 |           100 |         7 |                   6 |\n|        50 |              10 |  4       |           102 |                  21 |                  30 |           153 |        13 |                  10 |\n|        35 |               8 |  5       |            92 |                  70 |                  13 |           175 |        11 |                   9 |\n|        40 |              18 |  5       |            86 |                  26 |                  37 |           149 |         9 |                   8 |\n|        10 |               5 |  5       |            92 |                  77 |                  11 |           180 |         6 |                   8 |
+|   minutes |   n_ingredients |   rating |   steps_words |   description_words |   ingredients_words |   total_words |   n_steps |   predicted_n_steps |
+|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|--------------:|----------:|--------------------:|
+|        20 |               6 |  4.66667 |            52 |                  40 |                   8 |           100 |         7 |                   6 |
+|        50 |              10 |  4       |           102 |                  21 |                  30 |           153 |        13 |                  10 |
+|        35 |               8 |  5       |            92 |                  70 |                  13 |           175 |        11 |                   9 |
+|        40 |              18 |  5       |            86 |                  26 |                  37 |           149 |         9 |                   8 |
+|        10 |               5 |  5       |            92 |                  77 |                  11 |           180 |         6 |                   8 |
 
 And here is a plot of all the predict steps versus the actual numbers of steps :
 
@@ -180,7 +204,7 @@ And here is a plot of all the predict steps versus the actual numbers of steps :
 
 And here is a plot of the residual :
 
-<iframe src="assets/Residual_Plot_baseline_final_model2t.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Residual_Plot_baseline_final_model_2t.html" width=800 height=600 frameBorder=0></iframe>
 
 With the following precision :
 
