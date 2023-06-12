@@ -63,7 +63,7 @@ Finally, we've let with those datas :
 
 I think that every columns might have an impact here on the numbers of steps. And here is the dataframe head :
 
-'| minutes | n_steps | n_ingredients | rating | steps_words | description_words | ingredients_words |\n|----------:|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|\n| 40 | 10 | 9 | 4 | 128 | 41 | 18 |\n| 45 | 12 | 11 | 5 | 148 | 42 | 18 |\n| 40 | 6 | 9 | 5 | 92 | 64 | 21 |\n| 120 | 7 | 7 | 5 | 128 | 34 | 12 |\n| 90 | 17 | 13 | 5 | 257 | 29 | 29 |'
+| minutes | n_steps | n_ingredients | rating | steps_words | description_words | ingredients_words |\n|----------:|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|\n| 40 | 10 | 9 | 4 | 128 | 41 | 18 |\n| 45 | 12 | 11 | 5 | 148 | 42 | 18 |\n| 40 | 6 | 9 | 5 | 92 | 64 | 21 |\n| 120 | 7 | 7 | 5 | 128 | 34 | 12 |\n| 90 | 17 | 13 | 5 | 257 | 29 | 29 |
 
 ### Baseline Model
 
@@ -78,7 +78,7 @@ R2 Score: 0.18450057434464318
 
 Here is the dataframe head :
 
-'| minutes | n_ingredients | n_steps | predicted_n_steps |\n|----------:|----------------:|----------:|--------------------:|\n| 495 | 15 | 9 | 14.2936 |\n| 25 | 9 | 10 | 9.9304 |\n| 35 | 12 | 11 | 12.1088 |\n| 75 | 21 | 22 | 18.6441 |\n| 170 | 15 | 38 | 14.289 |'
+| minutes | n_ingredients | n_steps | predicted_n_steps |\n|----------:|----------------:|----------:|--------------------:|\n| 495 | 15 | 9 | 14.2936 |\n| 25 | 9 | 10 | 9.9304 |\n| 35 | 12 | 11 | 12.1088 |\n| 75 | 21 | 22 | 18.6441 |\n| 170 | 15 | 38 | 14.289 |
 
 And here is a plot of all the predict steps versus the actual numbers of steps :
 
@@ -109,7 +109,7 @@ R2 Score: 0.7843539114289183
 
 Here is the dataframe head :
 
-'| minutes | n_ingredients | rating | steps_words | description_words | ingredients_words | n_steps | predicted_n_steps |\n|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|----------:|--------------------:|\n| 1 | 2 | 4.5 | 5 | 9 | 3 | 1 | 2 |\n| 70 | 15 | 1 | 94 | 37 | 21 | 8 | 10 |\n| 10 | 3 | 5 | 28 | 22 | 3 | 3 | 4 |\n| 25 | 11 | 2.5 | 114 | 31 | 22 | 8 | 11 |\n| 40 | 7 | 5 | 63 | 28 | 11 | 4 | 7 |'
+| minutes | n_ingredients | rating | steps_words | description_words | ingredients_words | n_steps | predicted_n_steps |\n|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|----------:|--------------------:|\n| 1 | 2 | 4.5 | 5 | 9 | 3 | 1 | 2 |\n| 70 | 15 | 1 | 94 | 37 | 21 | 8 | 10 |\n| 10 | 3 | 5 | 28 | 22 | 3 | 3 | 4 |\n| 25 | 11 | 2.5 | 114 | 31 | 22 | 8 | 11 |\n| 40 | 7 | 5 | 63 | 28 | 11 | 4 | 7 |
 
 And here is a plot of all the predict steps versus the actual numbers of steps :
 
@@ -138,15 +138,15 @@ R2 Score: 0.783468767587091
 
 Here is the dataframe head :
 
-'| minutes | n_ingredients | rating | steps_words | description_words | ingredients_words | n_steps | predicted_n_steps |\n|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|----------:|--------------------:|\n| 13 | 8 | 5 | 63 | 41 | 17 | 5 | 7 |\n| 135 | 12 | 5 | 198 | 49 | 17 | 14 | 17 |\n| 70 | 9 | 4 | 171 | 3 | 21 | 22 | 16 |\n| 35 | 12 | 5 | 131 | 84 | 25 | 13 | 12 |\n| 25 | 4 | 4.90909 | 32 | 12 | 7 | 4 | 4 |'
+| minutes | n_ingredients | rating | steps_words | description_words | ingredients_words | n_steps | predicted_n_steps |\n|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|----------:|--------------------:|\n| 13 | 8 | 5 | 63 | 41 | 17 | 5 | 7 |\n| 135 | 12 | 5 | 198 | 49 | 17 | 14 | 17 |\n| 70 | 9 | 4 | 171 | 3 | 21 | 22 | 16 |\n| 35 | 12 | 5 | 131 | 84 | 25 | 13 | 12 |\n| 25 | 4 | 4.90909 | 32 | 12 | 7 | 4 | 4 |
 
 And here is a plot of all the predict steps versus the actual numbers of steps :
 
-<iframe src="assets/Predicted_vs_Actual_Number_of_Steps_final_2.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Predicted_vs_Actual_Number_of_Steps_final_model_2.html" width=800 height=600 frameBorder=0></iframe>
 
 And here is a plot of the residual :
 
-<iframe src="assets/Residual_Plot_final_2.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Residual_Plot_baseline_final_2.html" width=800 height=600 frameBorder=0></iframe>
 
 With the following precision :
 
@@ -167,15 +167,15 @@ R2 Score: 0.792055755312701
 
 Here is the dataframe head :
 
-'| minutes | n_ingredients | rating | steps_words | description_words | ingredients_words | total_words | n_steps | predicted_n_steps |\n|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|--------------:|----------:|--------------------:|\n| 20 | 6 | 4.66667 | 52 | 40 | 8 | 100 | 7 | 6 |\n| 50 | 10 | 4 | 102 | 21 | 30 | 153 | 13 | 10 |\n| 35 | 8 | 5 | 92 | 70 | 13 | 175 | 11 | 9 |\n| 40 | 18 | 5 | 86 | 26 | 37 | 149 | 9 | 8 |\n| 10 | 5 | 5 | 92 | 77 | 11 | 180 | 6 | 8 |'
+| minutes | n_ingredients | rating | steps_words | description_words | ingredients_words | total_words | n_steps | predicted_n_steps |\n|----------:|----------------:|---------:|--------------:|--------------------:|--------------------:|--------------:|----------:|--------------------:|\n| 20 | 6 | 4.66667 | 52 | 40 | 8 | 100 | 7 | 6 |\n| 50 | 10 | 4 | 102 | 21 | 30 | 153 | 13 | 10 |\n| 35 | 8 | 5 | 92 | 70 | 13 | 175 | 11 | 9 |\n| 40 | 18 | 5 | 86 | 26 | 37 | 149 | 9 | 8 |\n| 10 | 5 | 5 | 92 | 77 | 11 | 180 | 6 | 8 |
 
 And here is a plot of all the predict steps versus the actual numbers of steps :
 
-<iframe src="assets/Predicted_vs_Actual_Number_of_Steps_final_2t.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Predicted_vs_Actual_Number_of_Steps_final_model_2t.html" width=800 height=600 frameBorder=0></iframe>
 
 And here is a plot of the residual :
 
-<iframe src="assets/Residual_Plot_final_2t.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Residual_Plot_baseline_final_2t.html" width=800 height=600 frameBorder=0></iframe>
 
 With the following precision :
 
